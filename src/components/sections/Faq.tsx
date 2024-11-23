@@ -30,7 +30,7 @@ const FAQ: FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#F9F9F9]">
       <div className="container mx-auto px-4 max-w-[1580px]">
         <div className="flex flex-col md:flex-row justify-between md:gap-36">
           <div className="md:w-1/3 mb-12 md:mb-0 text-center md:text-left">
@@ -51,7 +51,7 @@ const FAQ: FC = () => {
                 <div className="bg-white rounded-3xl border border-[#E5E7EB] overflow-hidden">
                   <button
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                    className="w-full px-8 md:px-12 py-6 md:py-8 flex items-start justify-between hover:bg-gray-50 transition-colors"
+                    className="w-full px-8 md:px-12 py-6 md:py-8 flex items-start justify-between transition-colors"
                   >
                     <span className="text-xl md:text-[28px] font-bold text-gray-900 text-left pr-8">{faq.question}</span>
                     <motion.div

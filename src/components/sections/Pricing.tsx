@@ -61,10 +61,10 @@ const PricingCard: FC<PricingPlan> = ({ name, price, description, buttonText, bu
   <div className="bg-white rounded-3xl p-12 shadow-sm border border-gray-200/80 h-[480px] flex flex-col justify-between">
     <div>
       <h3 className="text-3xl font-bold text-gray-900 mb-4">{name}</h3>
-      <div className="flex items-baseline mb-6">
-        <span className="text-6xl font-bold text-gray-900">{price}</span>
+      <div className="flex items-baseline mb-6 flex-wrap">
+        <span className="text-6xl font-bold text-gray-900 min-w-[180px]">{price}</span>
         {price !== "Gratuit" && price !== "Individuel" && (
-          <span className="ml-3 text-gray-500 text-xl">par ut. / mois</span>
+          <span className="ml-3 text-gray-500 text-xl whitespace-nowrap">par ut. / mois</span>
         )}
       </div>
       <p className="text-gray-500 text-2xl leading-relaxed">{description}</p>
