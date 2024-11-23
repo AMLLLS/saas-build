@@ -1,0 +1,50 @@
+@import '../styles/fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F9F9F9;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    @apply bg-gradient-to-b from-[#F9F9F9] to-[#F9F9F9];
+  }
+
+  .container {
+    @apply max-w-[1580px] mx-auto px-4 md:px-8 lg:px-16;
+  }
+} 
+
+/* Pour éviter le scroll pendant que le menu est ouvert */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Animation smooth pour le menu */
+.menu-slide-enter {
+  transform: translateY(-100%);
+}
+
+.menu-slide-enter-active {
+  transform: translateY(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.menu-slide-exit {
+  transform: translateY(0);
+}
+
+.menu-slide-exit-active {
+  transform: translateY(-100%);
+  transition: transform 300ms ease-in-out;
+} 

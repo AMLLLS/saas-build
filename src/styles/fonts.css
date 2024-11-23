@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Light'),
+       local('Aeonik-Light'),
+       url('/fonts/Aeonik-Light.ttf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Regular'),
+       local('Aeonik-Regular'),
+       url('/fonts/Aeonik-Regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Bold'),
+       local('Aeonik-Bold'),
+       url('/fonts/Aeonik-Bold.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
