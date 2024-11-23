@@ -72,7 +72,7 @@ const Testimonials: FC = () => {
   };
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#F9F9F9]">
       <div className="container max-w-[1580px]">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-24">
           {/* Left Column - Text Content */}
